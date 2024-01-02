@@ -1,0 +1,46 @@
+{
+  "name": "node-typescript-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm-run-all format lint clean && tsc",
+    "start": "ts-node src/index.ts",
+    "local": "ts-node src",
+    "local:watch": "nodemon src -e ts,json --exec 'npm run local'",
+    "lint": "eslint src",
+    "format": "npx prettier --write src",
+    "format:check": "npx prettier --check src",
+    "test": "vitest run ",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "eslint",
+    "prettier",
+    "vitest",
+    "supertest"
+  ],
+  "author": "Plik129",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+
+    "eslint-plugin-prettier": "^5.1.2",
+    "nodemon": "^3.0.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.1",
+    "vite-tsconfig-paths": "^4.2.3"
+  }
+}
