@@ -21,4 +21,5 @@ gen
 # Folders
 dist
 build
+dist
 node_modules
