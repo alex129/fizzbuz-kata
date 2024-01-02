@@ -9,4 +9,9 @@ describe('Fizz buzz', () => {
     const result = fizzbuzz(2);
     expect(result).toBe('2');
   });
+
+  test('When I fizzbuzz number 4, I get back a string representing it', async () => {
+    const result = fizzbuzz(4);
+    expect(result).toBe('4');
+  });
 });
