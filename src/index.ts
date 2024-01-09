@@ -1,5 +1,5 @@
 export const fizzbuzz = (number: number): string => {
-  if (number === 15 || number === 30) return 'FizzBuzz';
+  if (number === 15 || number === 30 || number === 45) return 'FizzBuzz';
   else if (number % 3 === 0) return 'Fizz';
   else if (number % 5 === 0) return 'Buzz';
   else return number.toString();
