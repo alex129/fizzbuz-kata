@@ -59,4 +59,9 @@ describe('Fizz buzz', () => {
     const result = fizzbuzz(0);
     expect(result).toBe('FizzBuzz');
   });
+
+  test('When I fizzbuzz number -1, I get back "-1"', async () => {
+    const result = fizzbuzz(-1);
+    expect(result).toBe('-1');
+  });
 });
